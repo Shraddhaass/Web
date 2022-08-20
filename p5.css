@@ -1,0 +1,15 @@
+label{
+    background-color: coral;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-right: 1ch;
+    
+}
+text{
+    background-color: plum;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    box-shadow: 10px;
+    border: 2ch;
+    box-sizing: content-box;
+}
