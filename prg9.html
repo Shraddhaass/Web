@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+            padding: 10px;
+        }
+          input[type="text"]
+            {
+                background-color:yellow;
+                border: 2px solid green;
+                border-radius: 4px;
+            }
+            h2{
+                text-transform: capitalize();
+            }
+        
+    </style>
+    <script>
+        function add(){
+        document.getElementById("res").value=parseInt(document.getElementById("num1").value)+parseInt
+        (document.getElementById("num2").value);
+         }
+        function sub(){
+        document.getElementById("res").value=parseInt(document.getElementById("num1").value)-parseInt
+        (document.getElementById("num2").value);
+         }
+        function mul(){
+        document.getElementById("res").value=parseInt(document.getElementById("num1").value)*parseInt
+        (document.getElementById("num2").value);
+        }
+        function div(){
+        document.getElementById("res").value=parseInt(document.getElementById("num1").value)/parseInt
+        (document.getElementById("num2").value);
+        }
+    </script>
+</head>
+<body>
+    <form>
+    <h2>simple calculator</h2>
+    <label for="num1">Number1</label>
+    <input type="text" name="num1" id="num1">
+    <label for="num2">Number2</label>
+    <input type="text" name="num2" id="num2">
+    <label for="num3">Result</label>
+    <input type="text" name="res" id="res" disabled><br>
+     <input type="button" value="ADD" onclick="add();">
+     <input type="button" value="SUB" onclick="sub();" >
+     <input type="button" value="MUL" onclick="mul();">
+     <input type="button" value="DIV" onclick="div();">
+     <input type="reset" value="CLEAR" >
+    </form>
+</body>
+</html>
