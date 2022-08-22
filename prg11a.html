@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(function(){
+        $("#fi").click(function(){
+       $("div").fadeIn(3000);
+        });
+        $("#fo").click(function(){
+       $("div").fadeOut(3000);
+        });
+    });
+    </script>
+</head>
+<body>
+    <div style="background-color: yellow ;" >
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum in magnam libero sapiente similique architecto sunt, dolorem accusantium dolore exercitationem dolorum quaerat soluta quo fuga omnis atque voluptatem, iste ut.</p>
+    </div>
+    <div style="background-color: aquamarine; color: brown;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe aut nam reiciendis porro quas sequi et aperiam in quaerat soluta illum ut dolorum nemo nesciunt vitae minus, quidem impedit!</p>
+    </div>
+    <button id="fi">Fade In</button>
+    <button id="fo">Fade out</button>
+</body>
+</html>
