@@ -9,15 +9,19 @@
     <script>
      $(function(){
         $("#z").click(function(){
-      $("#adiv").animate(height,'200px');
+      $("#adiv").animate({height:'200px',width:'200px'});
+     });
+     $("#x").click(function(){
+      $("#adiv").animate({height:'400px',width:'400px'});
      });
     });
     </script>
     
 </head>
 <body>
-    <button id="z">Animate</button>
-    <div id="adiv" height="100px" weight="200px" style="background-color:yellow;">
+    <button id="x">Animate bigger</button>
+    <button id="z">Animate smaller</button>
+    <div id="adiv" height="100px" width="200px" style="background-color:aquamarine;">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel ratione obcaecati officia, qui magni officiis autem excepturi hic corporis deleniti quos repellendus alias quod commodi libero ea odit itaque!</p>
     </div>
 </body>
