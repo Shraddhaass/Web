@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+        $("#agree").click(function(){
+        if($(this).is(':checked'))
+        $("#subbtn").removeAttr('disabled');
+        else
+         $("#subbtn").attr('disabled','disabled');
+        });
+    });
+    </script>
+</head>
+<body>
+    <form >
+        <h4>Maximum of 20 character</h4>
+        <textarea name="ta" id="ta" cols="30" rows="10" maxlength="30"></textarea>
+       <h4><span id="m">20</span>character remaining</h4> 
+       <input type="checkbox" name="agree" id="agree">I agree the Rule
+       <input type="button" id="subbtn" value="Submit" disabled>
+    </form>
+</body>
+</html>
