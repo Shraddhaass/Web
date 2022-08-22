@@ -8,18 +8,26 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
     $(function(){
-         $("#ta").keyup(function(){
-            var l = 20 - $(this).val().length;
-           $("span").text(l);
-         });
+     //   $("span").text($(this).attr('maxlength'));
+     //    $("#ta").keyup(function(){
+     //       var l = $(this).attr('maxlength') - $(this).val().length;
+     //      $("span").text(l);
+     //    });
+    //});
+    var maxl = $("#ta").attr('maxlength');
+    $("span").text(maxl);
+    $("#ta").keyup(function(){
+        var l= maxl - $(this).val().length;
+       $("#m").text(l);
     });
+});
         </script>
 </head>
 <body>
-    <form action="">
+    <form >
     <h4>Maximum of 20 character</h4>
-    <textarea name="ta" id="ta" cols="30" rows="10" maxlength="20"></textarea>
-   <h4><span>20</span>character remaining</h4> 
+    <textarea name="ta" id="ta" cols="30" rows="10" maxlength="30"></textarea>
+   <h4><span id="m">20</span>character remaining</h4> 
 </form>
    </body> 
 </html>
